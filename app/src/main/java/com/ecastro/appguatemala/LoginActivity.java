@@ -155,6 +155,8 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this,"Yo soy el parserData", Toast.LENGTH_LONG).show();
                 }*/
                 Toast.makeText(LoginActivity.this,"¡Bienvenido aventurero!", Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(LoginActivity.this,"¡Usuario o contraseña no validos!", Toast.LENGTH_LONG).show();
             }
         } catch (JSONException e) {
             e.printStackTrace();
