@@ -14,4 +14,13 @@
         android:layout_gravity="center"
         android:src="@drawable/ic_flecha_hacia_la_izquierda"/>
 
+    <customfonts.TextViewSFProDisplayRegular
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="Login"
+        android:textSize="26sp"
+        android:textColor="#8c746a"
+        />
+
 </LinearLayout>
