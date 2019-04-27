@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class TrashActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button btnLogin;
+    private Button btnLogin, btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,9 @@ public class TrashActivity extends AppCompatActivity implements View.OnClickList
 
         btnLogin = (Button)findViewById(R.id.botonlogin);
         btnLogin.setOnClickListener(this);
+
+        btnHome = (Button)findViewById(R.id.botonhome);
+        btnHome.setOnClickListener(this);
     }
 
     @Override
@@ -24,6 +27,12 @@ public class TrashActivity extends AppCompatActivity implements View.OnClickList
 
         if(v.getId() == btnLogin.getId()){
             Intent i = new Intent(TrashActivity.this,LoginActivity.class);
+            startActivity(i);
+            finish();
+        }
+
+        if(v.getId() == btnHome.getId()){
+            Intent i = new Intent(TrashActivity.this,HomeActivity.class);
             startActivity(i);
             finish();
         }
